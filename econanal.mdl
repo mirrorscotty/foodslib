@@ -1,0 +1,1350 @@
+Model {
+  Name			  "ECONANAL"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sat Apr 21 16:34:06 2001"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sat Apr 21 16:58:29 2001"
+  ModelVersionFormat	  "1.%<AutoIncrement:2>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "0"
+  SolverMode		  "SingleTasking"
+  Solver		  "VariableStepDiscrete"
+  RelTol		  "1e-3"
+  AbsTol		  "1e-6"
+  Refine		  "1"
+  MaxStep		  "1"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "0"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  off
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  off
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  off
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_unix.tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeLogAll		  on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  off
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "ECONANAL"
+    Location		    [368, 302, 578, 475]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    AutoZoom		    on
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Economic\nAnalysis"
+      Ports		      []
+      Position		      [40, 32, 105, 68]
+      FontName		      "helvetica-bold"
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      System {
+	Name			"Economic\nAnalysis"
+	Location		[101, 74, 523, 482]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Capital Investment Ratio Factors\nFluid Pro"
+"cessing Plant"
+	  Ports			  [0, 1]
+	  Position		  [95, 173, 160, 207]
+	  FontName		  "helvetica-bold"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "Capital Investment Ratio Factors\nFluid P"
+"rocessing Plant"
+	    Location		    [67, 154, 531, 724]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    AutoZoom		    on
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Buildings\n(includes services)"
+	      Position		      [160, 195, 215, 215]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.18"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Construction\nExpenses"
+	      Position		      [60, 394, 105, 416]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.41"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Contingency"
+	      Position		      [85, 475, 135, 495]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.42"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Contractor Fee"
+	      Position		      [155, 434, 210, 456]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.21"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Electrical (installed)"
+	      Position		      [70, 154, 115, 176]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.11"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Engineering & Supervision"
+	      Position		      [175, 356, 230, 374]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.33"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Equipment Installation"
+	      Position		      [175, 34, 220, 56]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.47"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Instrumentation\n& Controls"
+	      Position		      [90, 75, 140, 95]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.18"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Land (for purchase)"
+	      Position		      [75, 314, 125, 336]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.06"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      Ports		      [13, 1]
+	      Position		      [320, 30, 360, 540]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Inputs		      "13"
+	      DisplayOption	      "none"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Piping (installed)"
+	      Position		      [170, 115, 215, 135]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.66"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Service Facilities"
+	      Position		      [170, 275, 215, 295]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.7"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Working Capital"
+	      Position		      [160, 514, 215, 536]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.86"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Yard Improvements"
+	      Position		      [75, 235, 120, 255]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.1"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "out_1"
+	      Position		      [390, 275, 410, 295]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      SrcBlock		      "Working Capital"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      13
+	    }
+	    Line {
+	      SrcBlock		      "Contingency"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      12
+	    }
+	    Line {
+	      SrcBlock		      "Contractor Fee"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      11
+	    }
+	    Line {
+	      SrcBlock		      "Construction\nExpenses"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      10
+	    }
+	    Line {
+	      SrcBlock		      "Engineering & Supervision"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      9
+	    }
+	    Line {
+	      SrcBlock		      "Land (for purchase)"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      8
+	    }
+	    Line {
+	      SrcBlock		      "Service Facilities"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      7
+	    }
+	    Line {
+	      SrcBlock		      "Yard Improvements"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      6
+	    }
+	    Line {
+	      SrcBlock		      "Buildings\n(includes services)"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      5
+	    }
+	    Line {
+	      SrcBlock		      "Electrical (installed)"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "Piping (installed)"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Instrumentation\n& Controls"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Equipment Installation"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "out_1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Economic Analysis\nGeneral Information"
+	  Ports			  [0, 1]
+	  Position		  [100, 32, 165, 68]
+	  FontName		  "helvetica-bold"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "Economic Analysis\nGeneral Information"
+	    Location		    [620, 238, 989, 537]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    AutoZoom		    on
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Annual Operating\nTime (h/y)"
+	      Position		      [70, 103, 120, 127]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "4800"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Current Marshall &\nSwift Index"
+	      Position		      [70, 163, 120, 187]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "1036"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Economic Analysis\nLevel"
+	      Position		      [70, 43, 120, 67]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "3"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      Ports		      [4, 1]
+	      Position		      [200, 23, 235, 267]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Inputs		      "4"
+	      DisplayOption	      "none"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Project Life (y)"
+	      Position		      [75, 224, 115, 246]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "10"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "out_1"
+	      Position		      [300, 135, 320, 155]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "out_1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Annual Operating\nTime (h/y)"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Current Marshall &\nSwift Index"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Economic Analysis\nLevel"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Project Life (y)"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      4
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Manufacturing-Cost\nRatio Factors"
+	  Ports			  [0, 1]
+	  Position		  [95, 243, 160, 277]
+	  FontName		  "helvetica-bold"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "Manufacturing-Cost\nRatio Factors"
+	    Location		    [681, 158, 1116, 687]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    AutoZoom		    on
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Administration"
+	      Position		      [190, 350, 240, 370]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.075"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Distribution\n& Marketing"
+	      Position		      [80, 384, 120, 406]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.11"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Financing"
+	      Position		      [80, 465, 120, 485]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.05"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Insurance"
+	      Position		      [195, 280, 245, 300]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.007"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Lab Charges"
+	      Position		      [85, 180, 125, 200]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.15"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Local Taxes"
+	      Position		      [85, 246, 125, 264]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.025"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Maintenance\nMaterials"
+	      Position		      [200, 70, 240, 90]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.2"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Maintenance\nSupervision"
+	      Position		      [85, 115, 135, 135]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.15"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      Ports		      [13, 1]
+	      Position		      [300, 19, 330, 491]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Inputs		      "13"
+	      DisplayOption	      "none"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Operating\nSupervision"
+	      Position		      [85, 35, 135, 55]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.175"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Operating\nSupplies"
+	      Position		      [190, 139, 225, 161]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.15"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Patent & Royalty"
+	      Position		      [185, 210, 225, 230]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.03"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Plant\nOverhead"
+	      Position		      [80, 315, 125, 335]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.6"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Research &\nDevelopment"
+	      Position		      [180, 420, 220, 440]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.025"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "out_1"
+	      Position		      [375, 245, 395, 265]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      SrcBlock		      "Financing"
+	      SrcPort		      1
+	      Points		      [160, 0]
+	      DstBlock		      "Mux"
+	      DstPort		      13
+	    }
+	    Line {
+	      SrcBlock		      "Research &\nDevelopment"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      12
+	    }
+	    Line {
+	      SrcBlock		      "Distribution\n& Marketing"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      11
+	    }
+	    Line {
+	      SrcBlock		      "Administration"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      10
+	    }
+	    Line {
+	      SrcBlock		      "Plant\nOverhead"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      9
+	    }
+	    Line {
+	      SrcBlock		      "Insurance"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      8
+	    }
+	    Line {
+	      SrcBlock		      "Local Taxes"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      7
+	    }
+	    Line {
+	      SrcBlock		      "Patent & Royalty"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      6
+	    }
+	    Line {
+	      SrcBlock		      "Lab Charges"
+	      SrcPort		      1
+	      Points		      [155, 0]
+	      DstBlock		      "Mux"
+	      DstPort		      5
+	    }
+	    Line {
+	      SrcBlock		      "Operating\nSupplies"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "Maintenance\nSupervision"
+	      SrcPort		      1
+	      Points		      [125, 0; 0, -10]
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Maintenance\nMaterials"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Operating\nSupervision"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "out_1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [5, 1]
+	  Position		  [240, 19, 270, 361]
+	  FontName		  "helvetica-bold"
+	  Inputs		  "5"
+	  DisplayOption		  "none"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Operating Costs"
+	  Ports			  [0, 1]
+	  Position		  [95, 103, 160, 137]
+	  FontName		  "helvetica-bold"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "Operating Costs"
+	    Location		    [431, 159, 822, 591]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    AutoZoom		    on
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Compressed Air\nCost ($/m^3)"
+	      Position		      [50, 260, 100, 280]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Electricity Cost ($/kW-h)"
+	      Position		      [135, 124, 190, 146]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Fuel Oil Cost ($/L)"
+	      Position		      [145, 214, 195, 236]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Maintenance Labor\nCost ($/man-h)"
+	      Position		      [55, 349, 105, 371]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "25"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      Ports		      [8, 1]
+	      Position		      [275, 11, 305, 394]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Inputs		      "8"
+	      DisplayOption	      "none"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Natural Gas\nCost ($/m^3)"
+	      Position		      [50, 168, 100, 192]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Operating Labor\nCost ($/man-h)"
+	      Position		      [135, 304, 185, 326]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "25"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Steam Cost ($/kg)"
+	      Position		      [150, 34, 200, 56]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0.0072"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Water Cost ($/kg)"
+	      Position		      [65, 79, 115, 101]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "0"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "out_1"
+	      Position		      [350, 195, 370, 215]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "out_1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Steam Cost ($/kg)"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Water Cost ($/kg)"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Electricity Cost ($/kW-h)"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Natural Gas\nCost ($/m^3)"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "Fuel Oil Cost ($/L)"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      5
+	    }
+	    Line {
+	      SrcBlock		      "Compressed Air\nCost ($/m^3)"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      6
+	    }
+	    Line {
+	      SrcBlock		      "Operating Labor\nCost ($/man-h)"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      7
+	    }
+	    Line {
+	      SrcBlock		      "Maintenance Labor\nCost ($/man-h)"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      8
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-Function"
+	  Ports			  [1]
+	  Position		  [305, 180, 355, 200]
+	  FontName		  "helvetica-bold"
+	  FunctionName		  "econs"
+	  Parameters		  "'ojstreams' 'ojunits'"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Time-Value \nof Money"
+	  Ports			  [0, 1]
+	  Position		  [90, 315, 155, 345]
+	  FontName		  "helvetica-bold"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "Time-Value \nof Money"
+	    Location		    [181, 68, 624, 451]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    AutoZoom		    on
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Corporate\nTax Rate (%)"
+	      Position		      [90, 320, 140, 340]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "34"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Discrete (0) or\nCompounded (1)"
+	      Position		      [200, 269, 250, 291]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "1"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "First Year\nCapacity (%)"
+	      Position		      [90, 19, 140, 41]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "100"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "General Purpose\nInflation Rate (%)"
+	      Position		      [190, 169, 240, 191]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "4"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Interest Rate (%)"
+	      Position		      [90, 118, 140, 142]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "15"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Last Year\nCapacity (%)"
+	      Position		      [180, 69, 235, 91]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Value		      "100"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      Ports		      [7, 1]
+	      Position		      [305, 12, 335, 348]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Inputs		      "7"
+	      DisplayOption	      "none"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Operating Inflation\nRates"
+	      Ports		      [0, 1]
+	      Position		      [85, 215, 145, 245]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      ShowPortLabels	      off
+	      TreatAsAtomicUnit	      off
+	      RTWSystemCode	      "Auto"
+	      RTWFcnNameOpts	      "Auto"
+	      RTWFileNameOpts	      "Auto"
+	      System {
+		Name			"Operating Inflation\nRates"
+		Location		[682, 299, 1124, 726]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		AutoZoom		on
+		Block {
+		  BlockType		  Constant
+		  Name			  "Compressed Air Inflation Rate (%)"
+		  Position		  [105, 260, 155, 280]
+		  FontSize		  12
+		  FontWeight		  "bold"
+		  Value			  "0"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Electricity Inflation Rate(%)"
+		  Position		  [100, 124, 155, 146]
+		  FontSize		  12
+		  FontWeight		  "bold"
+		  Value			  "0"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Fuel Oil Inflation Rate (%)"
+		  Position		  [105, 214, 155, 236]
+		  FontSize		  12
+		  FontWeight		  "bold"
+		  Value			  "0"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Maintenance Labor Inflation Rate (%"
+")"
+		  Position		  [105, 349, 155, 371]
+		  FontSize		  12
+		  FontWeight		  "bold"
+		  Value			  "4"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux"
+		  Ports			  [8, 1]
+		  Position		  [270, 13, 305, 392]
+		  FontSize		  12
+		  FontWeight		  "bold"
+		  Inputs		  "8"
+		  DisplayOption		  "none"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Natural Gas Inflation Rate (%)"
+		  Position		  [110, 168, 160, 192]
+		  FontSize		  12
+		  FontWeight		  "bold"
+		  Value			  "0"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Operating Labor Inflation Rate (%)"
+		  Position		  [100, 304, 150, 326]
+		  FontSize		  12
+		  FontWeight		  "bold"
+		  Value			  "4"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Steam Inflation Rate (%)"
+		  Position		  [100, 34, 150, 56]
+		  FontSize		  12
+		  FontWeight		  "bold"
+		  Value			  "4"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Water Inflation Rate (%)"
+		  Position		  [110, 79, 160, 101]
+		  FontSize		  12
+		  FontWeight		  "bold"
+		  Value			  "0"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "out_1"
+		  Position		  [340, 195, 360, 215]
+		  FontSize		  12
+		  FontWeight		  "bold"
+		  Port			  "1"
+		  OutputWhenDisabled	  "held"
+		  InitialOutput		  "0"
+		}
+		Line {
+		  SrcBlock		  "Maintenance Labor Inflation Rate (%"
+")"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  8
+		}
+		Line {
+		  SrcBlock		  "Operating Labor Inflation Rate (%)"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  7
+		}
+		Line {
+		  SrcBlock		  "Compressed Air Inflation Rate (%)"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  6
+		}
+		Line {
+		  SrcBlock		  "Fuel Oil Inflation Rate (%)"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  5
+		}
+		Line {
+		  SrcBlock		  "Natural Gas Inflation Rate (%)"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  4
+		}
+		Line {
+		  SrcBlock		  "Electricity Inflation Rate(%)"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Water Inflation Rate (%)"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Steam Inflation Rate (%)"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Mux"
+		  SrcPort		  1
+		  DstBlock		  "out_1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "out_1"
+	      Position		      [370, 170, 390, 190]
+	      FontSize		      12
+	      FontWeight	      "bold"
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "out_1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "First Year\nCapacity (%)"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Last Year\nCapacity (%)"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Interest Rate (%)"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "General Purpose\nInflation Rate (%)"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "Operating Inflation\nRates"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      5
+	    }
+	    Line {
+	      SrcBlock		      "Discrete (0) or\nCompounded (1)"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      6
+	    }
+	    Line {
+	      SrcBlock		      "Corporate\nTax Rate (%)"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      7
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Economic Analysis\nGeneral Information"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Time-Value \nof Money"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "Manufacturing-Cost\nRatio Factors"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Capital Investment Ratio Factors\nFluid Pro"
+"cessing Plant"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Operating Costs"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+      }
+    }
+  }
+}
